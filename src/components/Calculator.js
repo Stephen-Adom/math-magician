@@ -5,7 +5,7 @@ import ComponentBody from './ComponentBody';
 
 function Calculator() {
   return (
-    <section className="calculator-page">
+    <section className="calculator-page container">
       <div className="calculator-container">
         <CalculatorScreen />
         <ComponentBody />

@@ -5,10 +5,10 @@ import numberPadItems from './numberPadItems';
 
 function ComponentBody() {
   return (
-    <div className="calcuator-body">
+    <div className="calcuator-body row m-0">
       {
       numberPadItems.length ? (
-        numberPadItems.forEach((item) => <NumberPad item={item} />)
+        numberPadItems.map((item) => (<NumberPad key={item.label} item={item} />))
       ) : null
     }
     </div>
