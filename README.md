@@ -37,6 +37,7 @@ Math magicians is a website for all fans of mathematics
 ### Tech Stack <a name="tech-stack"></a>
 
 - **ReactJS**
+- **Bootstrap**
 - **CSS 3**
 
 <!-- Features -->
