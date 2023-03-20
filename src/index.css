@@ -9,6 +9,7 @@
 body {
   margin: 0;
   height: 100vh;
+  font-family: 'Poppins', sans-serif;
 }
 
 .App {
@@ -48,4 +49,6 @@ body {
   justify-content: center;
   padding: 20px;
   background-color: #fff;
+  margin-bottom: 1%;
+  font-weight: bold;
 }
