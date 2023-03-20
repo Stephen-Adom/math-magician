@@ -2,6 +2,50 @@
   box-sizing: border-box;
 }
 
+#root {
+  height: 100%;
+}
+
 body {
   margin: 0;
+  height: 100vh;
+}
+
+.App {
+  height: 100%;
+}
+
+.calculator-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.calculator-container {
+  border: 1px solid black;
+  width: 90%;
+}
+
+.calculator-screen {
+  padding: 14px;
+  width: 100%;
+  background-color: #b1b1b1;
+  text-align: right;
+}
+
+.calcuator-body {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #ececec;
+  gap: 1%;
+}
+
+.number-pad {
+  flex-basis: 24%;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  background-color: #fff;
 }
