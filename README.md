@@ -43,6 +43,8 @@ Math magicians is a website for all fans of mathematics
 
 ### Key Features <a name="key-features"></a>
 
+- **Calculator**
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- LIVE DEMO -->
