@@ -28,7 +28,7 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [Leaderboard] <a name="about-project"></a>
+# 📖 [Math-Magician] <a name="about-project"></a>
 
 Math magicians is a website for all fans of mathematics
 
