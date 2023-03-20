@@ -1,3 +1,5 @@
+<a name="readme-top"></a>
+
 <div align="center">
 
   <h1><b>Math Magician</b></h1>
@@ -18,7 +20,6 @@
   - [Prerequisites](#prerequisites)
   - [Install](#install)
   - [Usage](#usage)
-  - [Deployment](#triangular_flag_on_post-deployment)
 - [👥 Authors](#authors)
 - [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
@@ -103,18 +104,6 @@ To run the project, execute the following command:
 ```
 
 -
-
-### Deployment
-
-You can deploy this project using:
-
-<!-- Example:
-
-```sh
- vercel or gh-pages
-``` -->
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- AUTHORS -->
 
