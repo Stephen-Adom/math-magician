@@ -12,7 +12,6 @@ export const isNumber = (item) => !!item.match(/[0-9]+/);
  *   operation:String  +, -, etc.
  */
 export default function calculate(obj, buttonName) {
-  console.log(obj, buttonName);
   if (buttonName === 'AC') {
     return {
       total: null,
