@@ -1,9 +1,8 @@
 import React, { useState } from 'react';
+import { resultContext } from '../App';
 
 import CalculatorScreen from './CalculatorScreen';
 import ComponentBody from './ComponentBody';
-
-export const resultContext = React.createContext('0');
 
 function Calculator() {
   const [result, setResult] = useState('0');

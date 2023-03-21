@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { resultContext } from './Calculator';
+import { resultContext } from '../App';
 
 function CalculatorScreen() {
   const result = useContext(resultContext);
