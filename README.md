@@ -79,12 +79,10 @@ Clone this repository to your desired folder:
 ```sh
   cd my-folder
   git clone git@github.com/Stephen-Adom/math-magician.git
-  create a .env file in the root folder
-  Get an API token from <a href="https://api-ninjas.com/api/quotes">API Ninjas</a>
-  Add REACT_APP_API_KEY=<API_TOKEN> in your .env file
 ```
-
--
+- **Create a `.env` file in the root folder**
+- **Get an API token from <a href="https://api-ninjas.com/api/quotes">API Ninjas</a>**
+- **Add `REACT_APP_API_KEY=<API_TOKEN>` in your .env file**
 
 ### Install
 
