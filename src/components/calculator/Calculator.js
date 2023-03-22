@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { resultContext } from '../App';
+import { resultContext } from '../../App';
 
 import CalculatorScreen from './CalculatorScreen';
 import ComponentBody from './ComponentBody';

@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 import NumberPad from './NumberPad';
 import numberPadItems from './numberPadItems';
-import { calculate, isNumber } from './logic';
+import { calculate, isNumber } from '../logic';
 
 const initialState = {
   total: null,
@@ -51,7 +51,11 @@ function ComponentBody(props) {
     <div className="calcuator-body row m-0">
       {numberPadItems.length
         ? numberPadItems.map((item) => (
-          <NumberPad handleClick={() => getKeyValue(item)} key={item.label} item={item} />
+          <NumberPad
+            handleClick={() => getKeyValue(item)}
+            key={item.label}
+            item={item}
+          />
         ))
         : null}
     </div>
