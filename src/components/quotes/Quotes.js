@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars */
 import React from 'react';
 import PropTypes from 'prop-types';
 
@@ -19,7 +18,6 @@ function Quotes(props) {
 
               <p className="fs-4">
                 {quote.quote}
-                {' '}
                 <b>
                   -
                   {quote.author}

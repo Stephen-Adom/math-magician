@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars */
 import React, { useState, useEffect } from 'react';
 
 import Calculator from './components/calculator/Calculator';
@@ -17,7 +16,6 @@ function App() {
     setLoading(true);
     fetchQuote().then((response) => {
       setLoading(false);
-      console.log(response);
       if (response.status === 200) {
         if (response.data.length) {
           setQuote(response.data[0]);
