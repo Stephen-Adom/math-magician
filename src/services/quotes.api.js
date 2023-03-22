@@ -1,17 +1,18 @@
+import axios from 'axios';
+
 const fetchQuote = async () => {
   try {
-    const response = await fetch(
+    const response = await axios.get(
       'https://api.api-ninjas.com/v1/quotes?category=love',
       {
-        method: 'GET',
         headers: {
           'Content-Type': 'application/json',
-          'X-Api-Key': 'GwxYnnBRWZoAuu+2vh5+KQ==zKNfBDzDyRYVazkN',
+          'X-Api-Key': process.env.REACT_APP_API_KEY,
         },
       },
     );
 
-    return response.json();
+    return response;
   } catch (error) {
     return error;
   }
