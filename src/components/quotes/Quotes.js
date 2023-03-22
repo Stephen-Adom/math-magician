@@ -1,8 +1,26 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React, { useState, useEffect } from 'react';
+import fetchQuote from '../../services/quotes.api';
 
-function Quotes(props) {
-  const { loading, error, quote } = props;
+function Quotes() {
+  const [loading, setLoading] = useState(false);
+
+  const [error, setError] = useState(null);
+  const [quote, setQuote] = useState(null);
+
+  useEffect(() => {
+    setLoading(true);
+    fetchQuote().then((response) => {
+      setLoading(false);
+      if (response.status === 200) {
+        if (response.data.length) {
+          setQuote(response.data[0]);
+          setError(null);
+        }
+      } else {
+        setError(response.message);
+      }
+    });
+  }, []);
 
   const showQuote = () => {
     if (loading) {
@@ -39,21 +57,5 @@ function Quotes(props) {
     </div>
   );
 }
-
-Quotes.propTypes = {
-  loading: PropTypes.bool,
-  error: PropTypes.string,
-  quote: PropTypes.shape({
-    quote: PropTypes.string,
-    author: PropTypes.string,
-    category: PropTypes.string,
-  }),
-};
-
-Quotes.defaultProps = {
-  loading: false,
-  error: null,
-  quote: null,
-};
 
 export default Quotes;
