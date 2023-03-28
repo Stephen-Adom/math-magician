@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Home = () => (
-  <div id="Home-section" className="container py-5">
+  <div id="Home-section">
     <h2 className="fw-bold">Welcome to our page</h2>
     <article className="fs-5">
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus

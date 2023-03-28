@@ -8,7 +8,9 @@ function App() {
   return (
     <div className="App">
       <Navigation />
-      <Outlet />
+      <div className="container py-5">
+        <Outlet />
+      </div>
     </div>
   );
 }
