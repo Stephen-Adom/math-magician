@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import fetchQuote from '../../services/quotes.api';
+import fetchQuote from '../services/quotes.api';
 
 function Quotes() {
   const [loading, setLoading] = useState(false);

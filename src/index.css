@@ -16,15 +16,31 @@ body {
   height: 100%;
 }
 
-.calculator-page {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
+.calculator-page img {
+  -moz-transform: scale(-1, -1);
+  -o-transform: scale(-1, -1);
+  -webkit-transform: scale(-1, -1);
+  transform: scale(-1, 1);
+}
+
+.calculator-page img.dialog-image {
+  position: absolute;
+  width: 39%;
+  left: 290px;
+  transform: scale(1, 1);
+}
+
+.calculator-page .welcome-label {
+  position: absolute;
+  top: 50px;
+  left: 334px;
+  width: 30%;
+  font-size: 1.4rem;
 }
 
 .calculator-container {
-  width: 90%;
+  width: 95%;
+  margin: auto;
 }
 
 .calculator-screen {
@@ -72,7 +88,7 @@ body {
 
 @media (min-width: 992px) {
   .calculator-container {
-    width: 70%;
+    width: 100%;
   }
 
   .calculator-screen {
