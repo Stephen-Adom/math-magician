@@ -1,6 +1,6 @@
 import React from 'react';
 import './Navigation.css';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 const Navigation = () => (
   <nav className="navbar navbar-expand-lg bg-body-tertiary py-3 py-lg-4">
@@ -12,13 +12,13 @@ const Navigation = () => (
       <div className="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
         <ul className="navbar-nav mr-auto mb-2 mb-lg-0">
           <li className="nav-item">
-            <Link className="nav-link active" aria-current="page" to="/">Home</Link>
+            <NavLink className="nav-link" aria-current="page" to="/">Home</NavLink>
           </li>
           <li className="nav-item">
-            <Link className="nav-link" to="calculator">Calculator</Link>
+            <NavLink className="nav-link" to="calculator">Calculator</NavLink>
           </li>
           <li className="nav-item">
-            <Link className="nav-link" to="quote">Quote</Link>
+            <NavLink className="nav-link" to="quote">Quote</NavLink>
           </li>
         </ul>
       </div>
