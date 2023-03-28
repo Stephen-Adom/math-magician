@@ -16,7 +16,7 @@ const router = createBrowserRouter([
         element: <Calculator />,
       },
       {
-        index: 'quote',
+        path: 'quote',
         element: <Quotes />,
       },
     ],
