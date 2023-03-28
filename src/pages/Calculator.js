@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import { resultContext } from '../../App';
+import { resultContext } from '../App';
 
-import CalculatorScreen from './CalculatorScreen';
-import ComponentBody from './ComponentBody';
+import CalculatorScreen from '../components/calculator/CalculatorScreen';
+import ComponentBody from '../components/calculator/ComponentBody';
 
 function Calculator() {
   const [result, setResult] = useState('0');
