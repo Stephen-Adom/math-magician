@@ -46,10 +46,18 @@ body {
 .calculator-screen {
   padding: 15px;
   width: 100%;
-  background-color: #9b9a9a;
+  background-color: #fffefe;
   text-align: right;
-  font-size: 27px;
-  color: #fff;
+  color: #3e3e3e;
+  border-top: 3px solid #ececec;
+  border-left: 3px solid #ececec;
+  border-right: 3px solid #ececec;
+}
+
+.calculator-screen span {
+  font-size: 20px;
+  font-weight: 600;
+  color: #e16b03;
 }
 
 .calcuator-body {
@@ -92,7 +100,7 @@ body {
   }
 
   .calculator-screen {
-    padding: 25px;
+    padding: 13px 25px;
   }
 
   .number-pad {
