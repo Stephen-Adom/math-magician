@@ -13,7 +13,9 @@ const initialState = {
 
 function ComponentBody(props) {
   const [numObj, setNumObj] = useState(initialState);
-  const { result, setResult } = props;
+  const {
+    result, setResult, setOperation, setDisplayResult,
+  } = props;
 
   useEffect(() => {
     if (!numObj.total && !numObj.next && !numObj.operation) {
@@ -25,14 +27,28 @@ function ComponentBody(props) {
     if (!numObj.total && numObj.next && !numObj.operation) {
       setResult(numObj.next);
     }
-  }, [numObj, result, setResult]);
+    if (numObj.total && !numObj.next && numObj.operation) {
+      setResult(`${numObj.total} ${numObj.operation}`);
+    }
+    if (numObj.total && numObj.next && numObj.operation) {
+      setResult(`${numObj.total} ${numObj.operation} ${numObj.next}`);
+      setOperation(`${numObj.total} ${numObj.operation} ${numObj.next}`);
+    }
+  }, [numObj, result, setResult, setOperation]);
 
   const getKeyValue = (item) => {
+    if (item.value === '=') {
+      setDisplayResult(true);
+    } else {
+      setDisplayResult(false);
+    }
+
     if (isNumber(item.value)) {
       setResult(item.value);
     }
 
     const result = calculate(numObj, item.value);
+    console.log(result, 'result');
     setNumObj((prevState) => ({
       ...prevState,
       ...result,
@@ -65,6 +81,8 @@ function ComponentBody(props) {
 ComponentBody.propTypes = {
   result: PropTypes.string.isRequired,
   setResult: PropTypes.func.isRequired,
+  setOperation: PropTypes.func.isRequired,
+  setDisplayResult: PropTypes.func.isRequired,
 };
 
 export default ComponentBody;

@@ -8,6 +8,8 @@ import ComponentBody from '../components/calculator/ComponentBody';
 
 function Calculator() {
   const [result, setResult] = useState('0');
+  const [operation, setOperation] = useState('');
+  const [displayresult, setDisplayResult] = useState(false);
 
   return (
     <section className="row calculator-page">
@@ -20,8 +22,13 @@ function Calculator() {
         <section className="container-fluid">
           <div className="calculator-container">
             <resultContext.Provider value={result}>
-              <CalculatorScreen />
-              <ComponentBody result={result} setResult={setResult} />
+              <CalculatorScreen displayresult={displayresult} operation={operation} />
+              <ComponentBody
+                result={result}
+                setResult={setResult}
+                setOperation={setOperation}
+                setDisplayResult={setDisplayResult}
+              />
             </resultContext.Provider>
           </div>
         </section>
