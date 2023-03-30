@@ -14,6 +14,7 @@
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
+  - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
@@ -45,7 +46,15 @@ Math magicians is a website for all fans of mathematics
 ### Key Features <a name="key-features"></a>
 
 - **Calculator**
+- **Home Section**
 - **Quotes Section**
+
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 🚀 Live Demo <a name="live-demo"></a>
+
+- Here is the link to the live demo version - [Math-magician](https://math-magician-two.vercel.app/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
