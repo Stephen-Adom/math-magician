@@ -31,7 +31,7 @@
 
 # 📖 [Math-Magician] <a name="about-project"></a>
 
-Math magicians is a website for all fans of mathematics
+Math Magicians is a website for all fans of mathematics
 
 ## 🛠 Built With <a name="built-with"></a>
 
